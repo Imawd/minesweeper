@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">CSCI310 Minesweeper Project</string>
+
+    <string name="time_elapsed">Time: </string>
+    <string name="mode_digging">Mode: Digging</string>
+    <string name="mode_flagging">Mode: Flagging</string>
+    <string name="mines_remaining">Mines: </string>
+
+
+    <string name="result_won">You won!</string>
+    <string name="result_lost">You lost!</string>
+    <string name="time_used">Time: </string>
+    <string name="return_to_landing">Return to Landing Page</string>
+
+</resources>
