@@ -10,6 +10,7 @@
     <string name="result_won">You won!</string>
     <string name="result_lost">You lost!</string>
     <string name="time_used">Time: </string>
+    <string name="name">Name: Imaad Feerasta</string>
     <string name="return_to_landing">Return to Landing Page</string>
 
 </resources>

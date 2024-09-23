@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
         timer = findViewById(R.id.timer);
         modeButton = findViewById(R.id.modeButton);
 
-        mineCounter.setText("Mines:" + MINE_COUNT);
+        mineCounter.setText("Mines:" + remainingMines);
         buttons = new Button[ROWS][COLS];
         grid = new int[ROWS][COLS];
         revealedCells = new boolean[ROWS][COLS];
@@ -100,6 +100,14 @@ public class MainActivity extends AppCompatActivity {
                 revealCell(row, col);
             }
         } else {
+            if (grid[row][col] == 1 && !flaggedCells[row][col]) {
+                remainingMines -= 1;
+                mineCounter.setText("Mines:" + remainingMines);
+            }
+            else if (grid[row][col] == 1 && flaggedCells[row][col]) {
+                remainingMines += 1;
+                mineCounter.setText("Mines:" + remainingMines);
+            }
             flaggedCells[row][col] = !flaggedCells[row][col];
             buttons[row][col].setText(flaggedCells[row][col] ? "F" : "");
         }
